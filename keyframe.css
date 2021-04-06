@@ -1,0 +1,47 @@
+body{
+    background: #333;
+}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myanimation {
+    0%{
+        background: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+    }
+    25%{
+        background-color: red;
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        background-color: green;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    75%{
+        background-color: blue;
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 50% 50% 50% 50%;
+    }
+}
